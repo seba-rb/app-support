@@ -3,28 +3,40 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>App Support · Sebastián Ramírez</title>
+  <title>Support · Sebastián Ramírez</title>
   <link rel="stylesheet" href="../styles.css">
+  <link rel="alternate" hreflang="en" href="../support/">
+  <link rel="alternate" hreflang="es" href="../es/support/">
+  <script>
+    function openLegacySpanishLink() {
+      if (location.hash === "#espanol" || location.hash === "#kttl-es") {
+        location.replace("../es/support/" + (location.hash === "#kttl-es" ? "#kttl" : ""));
+      }
+    }
+    openLegacySpanishLink();
+    addEventListener("hashchange", openLegacySpanishLink);
+  </script>
 </head>
 <body>
-  <header>
-    <nav aria-label="Documents"><a href="../privacy/">Privacy</a><a href="#espanol" lang="es">Español</a></nav>
+  <header class="site-header">
+    <nav class="documents layout" aria-label="Documents">
+      <a href="../privacy/">Privacy</a> <a href="../support/" aria-current="page">Support</a>
+    </nav>
   </header>
-  <main>
-<h1 id="english">App Support</h1>
+  <main class="layout">
+    <header class="page-header">
+      <h1 id="english">Support</h1>
+      <nav class="languages" aria-label="Language">
+        <span aria-current="true">English</span><a href="../es/support/" lang="es" hreflang="es">Español</a>
+      </nav>
+    </header>
+    <div class="content">
 <p>Email <a href="mailto:seba.appsupport@gmail.com">seba.appsupport@gmail.com</a>. Include the app name, its version, your iOS version, and the step where the issue occurred. Leave out passwords and private network details.</p>
 <h2 id="kttl"><span id="kttl-en">kttl</span></h2>
 <p>kttl is an independent app for the Fellow Stagg EKG Pro kettle, model EP20AAUK.</p>
 <ol><li>Open kttl, tap Find kettle, and allow Bluetooth when prompted.</li><li>Select the kettle and follow the Wi‑Fi setup. Allow Local Network access when prompted.</li><li>If the connection cannot be verified, check that your iPhone and kettle can reach each other on the local network and follow the recovery action in kttl.</li></ol>
 <p>If the issue continues, include the kettle model and firmware if available.</p>
-<section lang="es" aria-labelledby="espanol">
-<h2 id="espanol">Soporte en español</h2>
-<p>Escribe a <a href="mailto:seba.appsupport@gmail.com">seba.appsupport@gmail.com</a>. Incluye el nombre de la app, su versión, la versión de iOS y el paso en que ocurrió el problema. Omite contraseñas y datos privados de la red.</p>
-<h3 id="kttl-es">kttl</h3>
-<p>kttl es una app independiente para el hervidor Fellow Stagg EKG Pro, modelo EP20AAUK.</p>
-<ol><li>Abre kttl, toca Buscar hervidor y permite Bluetooth cuando iOS lo pida.</li><li>Selecciona el hervidor y sigue la configuración de Wi‑Fi. Permite Red local cuando aparezca el aviso.</li><li>Si la conexión no se verifica, comprueba que el iPhone y el hervidor pueden comunicarse en la misma red local y sigue la opción de recuperación que muestre kttl.</li></ol>
-<p>Si el problema continúa, incluye el modelo y firmware del hervidor si están disponibles.</p>
-</section>
+    </div>
   </main>
 </body>
 </html>
