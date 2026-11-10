@@ -1,8 +1,8 @@
 # App support
 
-GitHub Pages publica el contenido estático de `main`. La raíz redirige a Soporte.
+GitHub Pages serves static files from `main`. The root redirects to Support.
 
-- `privacy/index.html` contiene el tratamiento común y los datos específicos de cada app.
-- `support/index.html` reúne el contacto y las instrucciones de cada app.
-- Para incorporar otra app, agrega su sección en ambos idiomas con un ID estable en cada página. Por ejemplo, kttl usa `#kttl` y `#kttl-en`.
-- Mantén las URLs y los IDs existentes al actualizar textos.
+- `privacy/index.html` describes shared data practices and app-specific policies.
+- `support/index.html` lists contact details and instructions for each app.
+- Add each app to both pages in English and Spanish. Use the app slug for the English section and add `-es` for Spanish. For example, kttl uses `#kttl` and `#kttl-es`.
+- Keep published URLs and anchors working when updating the pages.
