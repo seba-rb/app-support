@@ -1,0 +1,30 @@
+html {
+  color-scheme: light dark;
+  font-family: system-ui, sans-serif;
+  line-height: 1.65;
+}
+
+body {
+  max-width: 66ch;
+  margin: 0 auto;
+  padding: 1rem clamp(1rem, 5vw, 2.5rem) 3rem;
+  overflow-wrap: anywhere;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+section[lang="en"] {
+  margin-top: 3rem;
+}
+
+li + li {
+  margin-top: 0.5rem;
+}
